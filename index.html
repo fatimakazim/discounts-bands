@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Responsive Google Sheets Embed</title>
+   <style>
+      /* Container for iframe to ensure it maintains aspect ratio */
+      .iframe-container {
+         position: relative;
+         width: 100%;
+         height: 0;
+         padding-bottom: 125%; /* Aspect ratio (height/width = 1.25) */
+         overflow: hidden;
+         max-width: 100%;
+      }
+
+      /* Make the iframe responsive */
+      .iframe-container iframe {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+      }
+   </style>
+</head>
+<body>
+
+   <h1>Fall ’24 PorchFest Wristband Discounts</h1>
+
+   <div class="iframe-container">
+      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSE6UN_w9mHvh1nNsyzfDvSZ01bZwQSaM9_pV0xVzE8VA6g5sENkHbqpWJnQSWlGjuJSO9CQnOI13E5/pubhtml?gid=0&widget=false&headers=false&chrome=false" frameborder="0"></iframe>
+   </div>
+
+</body>
+</html>
